@@ -2,10 +2,162 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Page - Online Shop</title>
+    
+    <!-- Link to Local Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="product.css">
+    
+    <!-- Link to Local Bootstrap Bundle JS (with Popper) -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f4e855eb8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    product 1 page is wroking !
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand" href="#"> <img alt="logo" class="me-3 me-md-5"
+                src="img/logo.svg"></img></a> 
+            
+            <!-- Toggle Button for Mobile View -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+    
+                <!-- Search Form -->
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+    
+                <!-- Icons -->
+                <div class="d-flex ms-3">
+                    <a href="#" class="btn btn-outline-primary me-2">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-primary me-2">
+                        <i class="fa-solid fa-heart"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Product Image -->
+            <div class="col-md-6 image-container">
+                <img src="/img/Apple iPhone 12 Pro 6.1 RAM.jpg" alt="Product Image" class="img-fluid">
+            </div>
+        
+            <!-- Product Details -->
+            <div class="col-md-6">
+                <h1 class="product-title text-center">Product Name</h1>
+                <p class="text-muted text-center">Brand Name</p>
+                <p class="product-price h4 text-center">$29.99</p>
+            </div>
+        </div>
+        
+    
+                <!-- Product Description -->
+                <div class="mt-3">
+                    <p class="product-description">
+                        This is a detailed description of the product that highlights key features,
+                        benefits, and other important information customers need to know.
+                    </p>
+                </div>
+    
+                <!-- Quantity and Add to Cart -->
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" value="1" min="1">
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+    
+                <!-- Product Reviews -->
+                <div class="mt-4">
+                    <p><strong>Reviews:</strong></p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>(4.0 / 5)</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Social Sharing Buttons -->
+                <div class="mt-3">
+                    <button class="btn btn-outline-secondary"><i class="fa-brands fa-facebook"></i></button>
+                    <button class="btn btn-outline-secondary"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="btn btn-outline-secondary"><i class="fa-brands fa-pinterest"></i></button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Additional Details and Related Products -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2>Product Details</h2>
+                <p>Additional information about the product, specifications, usage instructions, etc.</p>
+            </div>
+    
+            <!-- Related Products -->
+            <div class="col-12 mt-4">
+                <h3>Related Products</h3>
+                <div class="d-flex">
+                    <!-- Example of a related product card -->
+                    <div class="card me-3" style="width: 18rem;">
+                        <img src="img/related-product.jpg" class="card-img-top" alt="Related Product">
+                        <div class="card-body">
+                            <h5 class="card-title">Related Product Name</h5>
+                            <p class="card-text">$19.99</p>
+                            <a href="#" class="btn btn-outline-primary">View Product</a>
+                        </div>
+                    </div>
+                    <!-- Add more product cards as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+    
+
 </body>
 </html>
