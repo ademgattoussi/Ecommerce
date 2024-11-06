@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>brand - online shop</title>
+
+    <!-- Link to Local Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Link to Local Bootstrap Bundle JS (with Popper) -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f4e855eb8f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container pt-3 align-content-center">
+      <!-- Logo and Search Bar -->
+      <div class="d-flex align-items-center mb-2">
+        <!-- Logo -->
+        <a class="navbar-brand me-3" href="#">
+          <img alt="logo" src="img/logo.svg" />
+        </a>
+
+        <!-- Search Bar -->
+        <div class="input-group w-50 ms-auto">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Rechercher un produit"
+            aria-label="Rechercher un produit"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav links -->
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex flex-row gap-lg-5 gap-md-3 gap-3">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Catégories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="pages/categories/electronics.html"
+                  >Électronique</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages/categories/clothing.html"
+                  >Vêtements</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="pages/categories/home-appliances.html"
+                  >Électroménager</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages/categories/sports.html"
+                  >Sports & Loisirs</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages/categories/books.html"
+                  >Livres</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="pages/categories/beauty.html"
+                  >Beauté & Soins Personnels</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/others/hot-offers.html">Offres spéciales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/others/gift-boxes.html">Coffrets cadeaux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pages/others/projects.html">Projets</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <!-- nav section -->
+    <div class="bg-primary py-5">
+      <div class="container py-5 text-light">
+        <h1 class="display-1">
+          Best products &<br />
+          Brands in our store
+        </h1>
+        <p class="lead">Trendy Products, Factory Prices, Excellent Service</p>
+        <a
+          id="shop-btn"
+          href="#shop"
+          role="button"
+          class="btn btn-warning fs-5 text-light"
+          >Shop now</a
+        >
+        <a href="#" role="button" class="btn btn-light text-dark fs-5"
+          >Learn more</a
+        >
+      </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container py-5" id="shop">
+      <h3 class="fw-bold mb-4 text-center text-md-start">Nouveaux Produits</h3>
+
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+        <!-- Product 1 -->
+        <div class="col">   
+          <div class="card h-100 shadow-sm pb-3">
+            <a
+              href="pages/products/product1.html"
+              class="text-decoration-none pt-3"
+            >
+              <img
+                src="img/GoPro HERO6 4K Action.jpg"
+                class="card-img-top"
+                alt="GoPro HERO6 4K Action"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$790.50</h5>
+                <p class="card-text text-muted">
+                  Caméra GoPro HERO6 4K Action - Noir
+                </p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm pb-3">
+            <a
+              href="pages/products/product2.html"
+              class="text-decoration-none pt-3"
+            >
+              <img
+                src="img/Canon camera 20x zoom, Black.jpg"
+                class="card-img-top"
+                alt="Canon camera 20x zoom, Black"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$320.00</h5>
+                <p class="card-text text-muted">
+                  Appareil photo Canon 20x zoom - Noir
+                </p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm pb-3">
+            <a
+              href="pages/products/product3.html"
+              class="text-decoration-none pt-3"
+            >
+              <img
+                src="img/Xiaomi.jpg"
+                class="card-img-top"
+                alt="Xiaomi Redmi 8 Original Global"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$120.00</h5>
+                <p class="card-text text-muted">
+                  Xiaomi Redmi 8 Global Original - 4GB
+                </p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm pb-3">
+            <a
+              href="pages/products/product4.html"
+              class="text-decoration-none pt-3"
+            >
+              <img
+                src="img/Apple iPhone 12 Pro 6.1 RAM.jpg"
+                class="card-img-top"
+                alt="Apple iPhone 12 Pro"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$999.99</h5>
+                <p class="card-text text-muted">
+                  Apple iPhone 12 Pro 6.1 RAM - 512GB
+                </p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm pb-3">
+            <a
+              href="pages/products/product5.html"
+              class="text-decoration-none pt-3"
+            >
+              <img
+                src="img/Apple Watch Series 1 Sport.jpg"
+                class="card-img-top"
+                alt="Apple iPhone 12 Pro"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$120.00</h5>
+                <p class="card-text text-muted">Apple Watch Series 1 Sport</p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm pb-3">
+            <a
+              href="pages/products/product6.html"
+              class="text-decoration-none pt-3"
+            >
+              <img
+                src="img/watch.jpg"
+                class="card-img-top"
+                alt="Apple iPhone 12 Pro"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$80.00</h5>
+                <p class="card-text text-muted">
+                  shirts with multiple colors, for men and lady
+                </p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm pb-3">
+            <a href="pages/products/product7.html" class="text-decoration-none pt-3">
+              <img
+                src="img/Gaming Headset 32db Black.jpg"
+                class="card-img-top"
+                alt="Apple iPhone 12 Pro"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$99.50</h5>
+                <p class="card-text text-muted">
+                  Gaming Headset 32db Black built in mic
+                </p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm pb-3">
+            <a
+              href="pages/products/product8.html"
+              class="text-decoration-none pt-3"
+            >
+              <img
+                src="img/blue bag.jpg"
+                class="card-img-top"
+                alt="blue bag"
+                style="height: 240px; object-fit: cover"
+              />
+              <div class="card-body text-center mb-auto">
+                <h5 class="card-title text-dark">$49,99</h5>
+                <p class="card-text text-muted">Sac Bleu Unisexe</p>
+              </div>
+            </a>
+            <hr class="w-75 align-self-center mt-auto" />
+            <div class="d-flex justify-content-center gap-2">
+              <a href="#" class="btn btn-primary px-4">Ajouter au panier</a>
+              <a href="#" class="btn btn-outline-primary"
+                ><i class="fa-solid fa-heart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Pourquoi nous ? -->
+    <div class="py-5 px-3">
+      <div class="container py-5">
+        <h3 class="fw-bold text-center text-md-start mb-3">Pourquoi nous ?</h3>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+            <div class="bg-white shadow-sm rounded-circle p-3">
+              <i class="fa-solid fa-money-bill fs-1 text-primary"></i>
+            </div>
+            <div class="ms-3 mt-md-5">
+              <h6 class="h6 fw-bold">Prix raisonnables</h6>
+              <p class="text-muted">
+                Profitez de tarifs compétitifs adaptés à votre budget sans
+                compromis sur la qualité.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+            <div class="bg-white shadow-sm rounded-circle p-3">
+              <i class="fa-solid fa-star fs-1 text-primary"></i>
+            </div>
+            <div class="ms-3 mt-md-5">
+              <h6 class="h6 fw-bold">Meilleure qualité</h6>
+              <p class="text-muted">
+                Nos produits sont fabriqués avec des matériaux de première
+                qualité pour une durabilité et une fiabilité exceptionnelles.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+            <div class="bg-white shadow-sm rounded-circle p-3">
+              <i class="fa-solid fa-plane fs-1 text-primary"></i>
+            </div>
+            <div class="ms-3 mt-md-5">
+              <h6 class="h6 fw-bold">Livraison mondiale</h6>
+              <p class="text-muted">
+                Nous expédions dans le monde entier pour que vous receviez vos
+                produits où que vous soyez.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+            <div class="bg-white shadow-sm rounded-circle p-3">
+              <i class="fa-solid fa-users fs-1 text-primary"></i>
+            </div>
+            <div class="ms-3 mt-md-5">
+              <h6 class="h6 fw-bold">Satisfaction client</h6>
+              <p class="text-muted">
+                Notre priorité est votre satisfaction; nous nous assurons que
+                vous soyez pleinement satisfait de votre expérience.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+            <div class="bg-white shadow-sm rounded-circle p-3">
+              <i class="fa-solid fa-thumbs-up fs-1 text-primary"></i>
+            </div>
+            <div class="ms-3 mt-md-5">
+              <h6 class="h6 fw-bold">Clients satisfaits</h6>
+              <p class="text-muted">
+                Nous avons une communauté de clients heureux qui recommandent
+                nos produits.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-center">
+            <div class="bg-white shadow-sm rounded-circle p-3">
+              <i class="fa-solid fa-box-open fs-1 text-primary"></i>
+            </div>
+            <div class="ms-3 mt-md-5">
+              <h6 class="h6 fw-bold">Mille articles</h6>
+              <p class="text-muted">
+                Découvrez une large gamme d'articles pour répondre à tous vos
+                besoins.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- blog section -->
+    <div class="pb-5">
+      <div class="container py-5">
+        <h3 class="h3 fw-bold mb-3 text-center text-md-start">
+          Articles de Blog
+        </h3>
+        <div class="row mt-md-5">
+          <!-- Article 1: Promotion des marques -->
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <img
+              alt="Des boîtes de produits"
+              class="bg rounded"
+              src="img/boxes.jpg"
+              width="250"
+              height="200"
+            />
+            <div class="mt-3">
+              <a
+                href="https://medium.com/search?q=brands+discount"
+                class="fw-bold"
+                >Comment promouvoir des marques</a
+              >
+              <p class="text-muted">
+                Découvrez des stratégies éprouvées pour améliorer la visibilité
+                et l'attrait de vos marques.
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 2: Gestion de l'expédition -->
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <img
+              alt="Logistique d'expédition"
+              class="bg rounded"
+              src="img/ship.jpg"
+              width="250"
+              height="200"
+            />
+            <div class="mt-3">
+              <a
+                href="https://medium.com/search?q=expedition+managment"
+                class="fw-bold"
+                >Comment nous gérons l'expédition</a
+              >
+              <p class="text-muted">
+                Un aperçu de notre processus de gestion de l'expédition,
+                garantissant la livraison rapide et fiable de vos produits.
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 3: Promouvoir des marques de produits frais -->
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <img
+              alt="Des fruits frais"
+              class="bg rounded"
+              src="img/fruit.jpg"
+              width="250"
+              height="200"
+            />
+            <div class="mt-3">
+              <a
+                href="https://medium.com/search?q=fresh+fruits+promotion"
+                class="fw-bold"
+                >Promouvoir les produits frais</a
+              >
+              <p class="text-muted">
+                Techniques de marketing pour mettre en avant la fraîcheur et la
+                qualité de vos produits.
+              </p>
+            </div>
+          </div>
+
+          <!-- Article 4: Histoires de succès de vendeurs -->
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <img
+              alt="Jeune femme avec son ordinateur portable"
+              class="bg rounded"
+              src="img/girl.jpg"
+              width="250"
+              height="200"
+            />
+            <div class="mt-3">
+              <a
+                href="https://medium.com/search?q=seller+seccess"
+                class="fw-bold"
+                >Histoires de succès de nos vendeurs</a
+              >
+              <p class="text-muted">
+                Découvrez comment nos partenaires ont atteint le succès grâce à
+                des stratégies innovantes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Rights -->
+          <div class="col-md-12 col-lg-3 mb-3">
+            <img alt="logo" src="img/logo.svg" class="mb-4" />
+            <p class="text-muted">
+              © 2018-2024 Yassin Makhlouf.<br />
+              Tous droits réservés.
+            </p>
+          </div>
+
+          <!-- Store Links -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-3">
+            <h6 class="h6 fw-bold">Boutique</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >À propos de nous</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Nos histoires</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Catégories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Information Links -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-3">
+            <h6 class="h6 fw-bold">Informations</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Nos services</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Foire aux questions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Conditions générales</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Support Links -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-3">
+            <h6 class="h6 fw-bold">Support</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Contactez-nous</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Assistance</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Suivi de commande</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-muted"
+                  >Retour et échange</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 mt-3 mt-lg-0">
+            <h6 class="h6 fw-bold">Abonnez-vous à notre Newsletter</h6>
+            <p class="text-muted">
+              Restez informé des dernières nouveautés et offres exclusives.
+            </p>
+            <div class="input-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Adresse e-mail"
+                aria-label="Adresse e-mail"
+                aria-describedby="btn-subscribe"
+              />
+              <button
+                class="btn btn-secondary"
+                type="button"
+                id="btn-subscribe"
+              >
+                S'abonner
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
